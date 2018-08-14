@@ -1,0 +1,12 @@
+alias bp='nano ~/.bash_profile'
+alias ae='nano ~/.aliases/aliases'
+alias reload='source ~/.bash_profile'
+
+# git aliases
+alias gp='git pull'
+alias gcom='git checkout master && git pull'
+alias gver="git pull && git commit -am '+ version' && git push"
+
+#ssh
+
+alias sshconfig='nano ~/.ssh/config'

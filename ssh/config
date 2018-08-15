@@ -1,0 +1,44 @@
+Host 34.251.12.123
+    User ubuntu
+    IdentityFile  ~/.ssh/carsnip-live.pem
+
+Host 10.7.*
+    User ubuntu
+    IdentityFile ~/.ssh/carsnip-live.pem
+
+Host 10.7.* *.app.live.carsnip.com
+    ProxyCommand ssh -W %h:%p ubuntu@34.251.12.123
+
+Host ftp
+    Hostname 10.1.43.13
+    User ubuntu
+    IdentityFile ~/.ssh/carsnip.pem
+
+Host live-scheduler
+    Hostname 10.7.58.180
+    User ec2-user
+    IdentityFile ~/.ssh/carsnip-live.pem    
+    ProxyCommand ssh -W %h:%p ubuntu@34.251.12.123
+
+Host staging-services
+    Hostname 10.3.110.241
+    User ubuntu
+    IdentityFile ~/.ssh/carsnip.pem
+
+Host live-services-1
+    Hostname 10.7.127.39
+    User ec2-user
+    ProxyCommand ssh -W %h:%p ubuntu@34.251.12.123
+    IdentityFile ~/.ssh/carsnip-live.pem
+
+Host live-services-2
+    Hostname 10.7.117.121
+    User ec2-user
+    ProxyCommand ssh -W %h:%p ubuntu@34.251.12.123
+    IdentityFile ~/.ssh/carsnip-live.pem
+
+Host dev-proxy
+    Hostname 10.3.0.187
+    User ec2-user
+    IdentityFile ~/.ssh/carsnip.pem
+

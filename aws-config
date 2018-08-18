@@ -1,0 +1,32 @@
+[default]
+region = eu-west-1
+
+[profile cs-live-admin]
+role_arn = arn:aws:iam::130865416625:role/xa-admin
+source_profile = default
+mfa_serial = arn:aws:iam::963107833485:mfa/CarsnipMark
+
+[profile cs-live-readonly]
+role_arn = arn:aws:iam::130865416625:role/xa-readonly
+source_profile = default
+mfa_serial = arn:aws:iam::963107833485:mfa/CarsnipMark
+
+[profile cs-crawl-admin]
+role_arn = arn:aws:iam::139227730202:role/xa-admin
+source_profile = default
+mfa_serial = arn:aws:iam::963107833485:mfa/CarsnipMark
+
+[profile cs-crawl-readonly]
+role_arn = arn:aws:iam::139227730202:role/xa-readonly
+source_profile = default
+mfa_serial = arn:aws:iam::963107833485:mfa/CarsnipMark
+
+[profile cs-dev-admin]
+role_arn = arn:aws:iam::079486244552:role/xa-admin
+source_profile = default
+mfa_serial = arn:aws:iam::963107833485:mfa/CarsnipMark
+
+[profile cs-dev-readonly]
+role_arn = arn:aws:iam::079486244552:role/xa-readonly
+source_profile = default
+mfa_serial = arn:aws:iam::963107833485:mfa/CarsnipMark

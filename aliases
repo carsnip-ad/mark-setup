@@ -8,5 +8,4 @@ alias gcom='git checkout master && git pull'
 alias gver="git pull && git commit -am '+ version' && git push"
 
 #ssh
-
 alias sshconfig='nano ~/.ssh/config'

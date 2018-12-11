@@ -10,6 +10,10 @@ brew cask install google-chrome
 brew cask install visual-studio-code
 ln -s "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
 
+#Sublime
+brew cask install sublime-text
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+
 brew install nvm
 mkdir ~/.nvm
 
@@ -42,17 +46,18 @@ nvm install 8.9.0
 yarn config set registry http://jenkins.internal.carsnip.com:4873
 
 brew cask install slack
-
 brew cask install evernote
-
 brew cask install spectacle
 
 # MANUAL - Install Zoom
 
+
 brew tap caskroom/versions
 brew cask install java8
-brew install groovy
-brew install gradle
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install groovy 2.4.11
 
 #MANUAL- Office from office365
 #MANUAL - IntelliJ
@@ -60,13 +65,7 @@ brew install gradle
 
 #MANUAL - Docker from docker.com
 
-curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+brew install python
+pip3 install awscli
 
-#
-unzip awscli-bundle.zip
-./awscli-bundle/install
-rm -rf awscli-bundle
-rm awscli-bundle.zip
-
-
-Nord VPN
+#MANUAL - Nord VPN

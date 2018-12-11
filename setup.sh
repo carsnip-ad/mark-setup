@@ -42,17 +42,16 @@ nvm install 8.9.0
 yarn config set registry http://jenkins.internal.carsnip.com:4873
 
 brew cask install slack
-
 brew cask install evernote
-
 brew cask install spectacle
 
 # MANUAL - Install Zoom
 
-
 brew cask install java
-brew install groovy
-brew install gradle
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install groovy 2.4.11
 
 #MANUAL- Office from office365
 #MANUAL - IntelliJ

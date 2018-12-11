@@ -60,13 +60,7 @@ brew install gradle
 
 #MANUAL - Docker from docker.com
 
-curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+brew install python
+pip3 install awscli
 
-#
-unzip awscli-bundle.zip
-./awscli-bundle/install
-rm -rf awscli-bundle
-rm awscli-bundle.zip
-
-
-Nord VPN
+#MANUAL - Nord VPN

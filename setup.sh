@@ -49,8 +49,8 @@ brew cask install spectacle
 
 # MANUAL - Install Zoom
 
-
-brew cask install java
+brew tap caskroom/versions
+brew cask install java8
 brew install groovy
 brew install gradle
 
